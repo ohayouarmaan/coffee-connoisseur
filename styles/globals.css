@@ -1,0 +1,17 @@
+@font-face {
+  font-family: stretch-sans;
+  src: url("/static/stretch-sans.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('/static/background.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+  font-family: stretch-sans;
+}
