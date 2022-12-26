@@ -6,7 +6,7 @@ export default function () {
             <p className={styles.title__line__underneath}>CCCC</p>
             <ul>
                 <li>HOME</li>
-                <li>ABOUT</li>
+                <li>MENU</li>
                 <li>CONTACT</li>
             </ul>
         </nav>

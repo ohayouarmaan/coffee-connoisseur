@@ -1,0 +1,80 @@
+.title {
+    font-size: 1rem;
+    z-index: 2;
+    position: absolute;
+    bottom: 10px;
+    height: fit-content;
+    left: 5%;
+    pointer-events: none;
+    color: white;
+}
+
+.main {
+    background-color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    font-size: 12px;
+    font-weight: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.text p {
+    padding-bottom: 70%;
+}
+
+.text:hover {
+    opacity: 1;
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+}
+
+.image__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.animateTitle {
+    animation: animation-title 0.3s forwards;
+}
+
+.removeAnimateTitle {
+    animation: removeAnimation 0.3s forwards;
+}
+
+@keyframes animation-title {
+    0% {
+        top: 90%;
+        color: white;
+    }
+    100% {
+        top: 20%;
+        color: black;
+    }
+}
+
+@keyframes removeAnimation {
+    0% {
+        top: 20%;
+        color: black;
+    }
+    100% {
+        top: 90%;
+        color: white;
+    }
+}

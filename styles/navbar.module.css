@@ -14,9 +14,37 @@
     flex-direction: column;
     gap: 10px;
     margin-right: 12rem;
+    list-style-type: none;
+}
+
+.nav ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav ul li::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    top: 50%;
+    transform: translateY(calc(-50% - 1px));
+    z-index: -1;
+    transition: all 0.4s;
+}
+.nav ul li:hover::before {
+    width: 100%;
 }
 
 .title__line__underneath {
     border: 2px solid black;
     padding: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.title__line__underneath:hover {
+    border: 2px solid white;
+    color: white;
 }

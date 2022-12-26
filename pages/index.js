@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
+import Nearby from '../components/nearby'
 import Banner from '../components/banner'
 import styles from '../styles/Home.module.css'
 
@@ -17,6 +17,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Banner />
+        <Nearby />
       </main>
     </>
   )

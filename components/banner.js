@@ -8,7 +8,7 @@ export default function () {
                 <h6 className={styles.main__text}>Coffee 
                    <span style={{ display: "block", color: "#532280" }}>Connoisseur.</span> 
                 </h6>
-                <p>Discover coool Coffee Shops Near You.</p>
+                <p>Get coool Coffee Near You.</p>
                 <div className={styles.line}></div>
                 <button className={styles.button}>
                     <p>need me some drink </p>
